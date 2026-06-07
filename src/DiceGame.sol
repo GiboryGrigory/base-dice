@@ -6,6 +6,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 /// @title DiceGame
 /// @notice On-chain dice game with configurable odds
 contract DiceGame is Ownable {
+
     uint256 public minBet = 0.001 ether;
     uint256 public maxBet = 0.1 ether;
     uint256 public houseEdge = 200; // 2%
