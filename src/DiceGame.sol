@@ -14,6 +14,7 @@ contract DiceGame is Ownable {
     
     constructor() Ownable(msg.sender) {}
     
+    /// @dev Internal helper
     function setLimits(uint256 _min, uint256 _max) external onlyOwner {
         minBet = _min;
         maxBet = _max;
