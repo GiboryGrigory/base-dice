@@ -5,6 +5,7 @@ import "forge-std/Script.sol";
 import "../src/DiceGame.sol";
 
 contract DeployDiceGame is Script {
+    /// @notice See {IContract}
     function run() external {
         uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
         vm.startBroadcast(deployerPrivateKey);
