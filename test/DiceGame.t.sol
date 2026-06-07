@@ -11,6 +11,7 @@ contract DiceGameTest is Test {
         game = new DiceGame();
     }
     
+    /// @notice See {IContract}
     function testDeployment() public view {
         assertEq(game.minBet(), 0.001 ether);
         assertEq(game.maxBet(), 0.1 ether);
